@@ -7,5 +7,5 @@ body.wine {background-color: #993F4D;}
 body.mulled-wine {background-color: #DF8B29;}
 section {font: 1em helvetica,"helvetica neue", arial, sans-serif; margin: 0; padding: 1em 0 0 0; text-align: center;}
 h1#outcome {font-size: 10em; padding: 0;margin: 0;}
-p#status {font-size: 4em;}
+p#status {font-style:italic;font-size: 4em;}
 a{color: #FFFFFF;text-decoration:none;}

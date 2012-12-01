@@ -10,7 +10,8 @@ GeoNames.prototype.findNearByWeather = function(latitude, longitude, callback) {
       weather = {
         "temperature": details.temperature,
         "lng": details.lng,
-        "lat": details.lat
+        "lat": details.lat,
+        "stationName": details.stationName
       };
     } catch (error) {
       console ? console.log(error) : null;

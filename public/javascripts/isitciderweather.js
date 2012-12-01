@@ -32,7 +32,7 @@ function calculateCider(lat, lng) {
         $('#outcome').html("of course it is, it's xmas ffs!");
         $('body').addClass('mulled-wine');
       }
-      $('#status').html('currently <a href="/?lat=' + data.lat + '&lng=' + data.lng + '">' + data.temperature + '&deg;</a>');
+      $('#status').html('currently ' + data.temperature + '&deg; in <a href="/?lat=' + data.lat + '&lng=' + data.lng + '">' + data.stationName + '</a>');
     } else {
       $('#status').html('failed to get weather details');
       $('body').addClass('error');
