@@ -19,17 +19,18 @@ function calculateCider(lat, lng) {
   geonames.findNearByWeather(lat, lng, function(data) {
     if (data) {
       if (parseInt(data.temperature) >= 30) {
-        $('#outcome').html("fucking oath! you're an idiot otherwise");
+        $('#outcome').html("DAMN it's warm! Cider is the only option I'm afraid");
         $('body').addClass('cider');
       } else if (parseInt(data.temperature) >= 19) {
-        $('#outcome').html("sure, i've got mine in hand");
+        $('#outcome').html("it's a bit warm, so best have a cider");
         $('body').addClass('cider');
-      } else if (parseInt(data.temperature) >= 10) {
+      } else if (parseInt(data.temperature) >= 12) {
         $('#outcome').html("maybe go a glass of red");
         $('body').addClass('wine');
       } else {
-        $('#outcome').html("grab some scotch, something peaty");
-        $('body').addClass('scotch');
+        // it's xmas, so it's all about the mulled wine!
+        $('#outcome').html("of course it is, it's xmas ffs!");
+        $('body').addClass('mulled-wine');
       }
       $('#status').html('currently <a href="/?lat=' + data.lat + '&lng=' + data.lng + '">' + data.temperature + '&deg;</a>');
     } else {
